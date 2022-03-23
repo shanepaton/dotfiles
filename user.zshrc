@@ -1,28 +1,15 @@
-# Use powerline
-USE_POWERLINE="true"
-# Source manjaro-zsh-configuration
-if [[ -e /usr/share/zsh/manjaro-zsh-config ]]; then
-  source /usr/share/zsh/manjaro-zsh-config
-fi
-# Use manjaro zsh prompt
-#if [[ -e /usr/share/zsh/manjaro-zsh-prompt ]]; then
-#  source /usr/share/zsh/manjaro-zsh-prompt
-#fi
-
-right_triangle() {
-   echo $'\ue0b0'
-}
-
-unsetopt correct_all
-unsetopt correct
-DISABLE_CORRECTION="true" 
-
+alias cls=clear
+alias code=/usr/bin/vscode/bin/code
+alias discord=/usr/bin/Discord/Discord
+alias crt=cool-retro-term
+alias pf="cd ~/Projects"
+alias gh="cd ~/Projects/github"
+alias zshcfg="nano ~/.zshrc"
+alias shcfg="nano ~/.bashrc"
+alias neowofetch=neofetch
+alias ghfetch="node /home/spaton/Projects/github/ghfetch-nodeimp/index.js"
+alias aur="firefox https://archlinux.org/packages/"
+export PATH="$PATH:$HOME/.local/bin"
 PROMPT="%K{253}%F{black} %n@%m %F{253}%K{177} %F{black}%~ %k$reset_color%}%F{177}%F{cyan} "
 PROMPT="%K{253}%F{black} %n@%m %F{253}%K{177} %F{white}%~ %k$reset_color%}%F{177}%K{99}%F{white} λ %F{99}%k${99}%F{cyan} "
 RPROMPT="%?"
-#spaton
-
-# Uncomment for ZSH Insulter
-#if [ -f ~/.zshInsulter/zsh.command-not-found ]; then
-#    . ~/.zshInsulter/zsh.command-not-found
-#fi
